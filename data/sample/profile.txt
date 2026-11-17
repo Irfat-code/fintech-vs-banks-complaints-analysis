@@ -1,0 +1,145 @@
+=== CFPB complaints 2020+ : profile ===
+raw files: 35; raw rows: 977,597; duplicate Complaint IDs dropped: 1,068 (IDs whose duplicate rows differ in content: 0)
+files involved in duplicates:
+_source_file
+credit_card_2025.csv                                         299
+checking_or_savings_account_2025.csv                         233
+credit_card_2024.csv                                         196
+credit_card_2026.csv                                         179
+checking_or_savings_account_2026.csv                         153
+checking_or_savings_account_2024.csv                         124
+money_transfer_virtual_currency_or_money_service_2025.csv    110
+money_transfer_virtual_currency_or_money_service_2026.csv     89
+checking_or_savings_account_2023.csv                          79
+credit_card_2023.csv                                          76
+literal 'None' strings converted to missing:
+Sub-product                    65
+Issue                           5
+Sub-issue                  189862
+Company public response    579257
+State                       17402
+ZIP code                     1643
+Tags                       824740
+total rows: 976,529
+Date received: min 2020-01-01  max 2026-11-16
+unparseable dates -> Date received: 0, Date sent to company: 0
+
+=== rows by Product x year ===
+Date received                                        2020   2021   2022    2023    2024    2025    2026   Total
+Product                                                                                                        
+Checking or savings account                         24238  29556  37582   49873   52821   84195   79033  357298
+Credit card                                             0      0      0   21872   75989   89978   85116  272955
+Credit card or prepaid card                         33879  31822  39879   35310       0       0       0  140890
+Money transfer, virtual currency, or money service   8306  13896  13534   13749   16751   84619   34002  184857
+Prepaid card                                            0      0      0    2262    6323    6502    5442   20529
+Total                                               66423  75274  90995  123066  151884  265294  203593  976529
+
+=== top 60 companies ===
+                                                Company  count  share_%  cum_share_%
+0                                  JPMORGAN CHASE & CO.  81550     8.35         8.35
+1                 BANK OF AMERICA, NATIONAL ASSOCIATION  73220     7.50        15.85
+2                                           Block, Inc.  71782     7.35        23.20
+3                     CAPITAL ONE FINANCIAL CORPORATION  70596     7.23        30.43
+4                                 WELLS FARGO & COMPANY  64038     6.56        36.99
+5                                        CITIBANK, N.A.  63710     6.52        43.51
+6                                  Paypal Holdings, Inc  36481     3.74        47.25
+7                                   SYNCHRONY FINANCIAL  33699     3.45        50.70
+8                              AMERICAN EXPRESS COMPANY  30291     3.10        53.80
+9                                   Chime Financial Inc  28792     2.95        56.75
+10                            NAVY FEDERAL CREDIT UNION  26281     2.69        59.44
+11                          Early Warning Services, LLC  24580     2.52        61.96
+12                                         U.S. BANCORP  22087     2.26        64.22
+13                                        EQUIFAX, INC.  20927     2.14        66.36
+14               TRANSUNION INTERMEDIATE HOLDINGS, INC.  19947     2.04        68.40
+15                  Experian Information Solutions Inc.  18912     1.94        70.34
+16                       Bread Financial Holdings, Inc.  18102     1.85        72.19
+17                           TD BANK US HOLDING COMPANY  14712     1.51        73.70
+18                                        DISCOVER BANK  14619     1.50        75.20
+19                               GOLDMAN SACHS BANK USA  14236     1.46        76.66
+20                                        PNC Bank N.A.  14128     1.45        78.11
+21                         TRUIST FINANCIAL CORPORATION  12983     1.33        79.44
+22                               BARCLAYS BANK DELAWARE  12802     1.31        80.75
+23               UNITED SERVICES AUTOMOBILE ASSOCIATION   9259     0.95        81.70
+24                       CITIZENS FINANCIAL GROUP, INC.   6917     0.71        82.41
+25                                       Coinbase, Inc.   6801     0.70        83.11
+26                              SOFI TECHNOLOGIES, INC.   6172     0.63        83.74
+27                                             Comerica   5817     0.60        84.34
+28                    FIFTH THIRD FINANCIAL CORPORATION   5573     0.57        84.91
+29                                  ALLY FINANCIAL INC.   5299     0.54        85.45
+30                               ROBINHOOD MARKETS INC.   5046     0.52        85.97
+31                        HUNTINGTON NATIONAL BANK, THE   4691     0.48        86.45
+32                                 Netspend Corporation   4430     0.45        86.90
+33                                   CLGF Holdco 1, LLC   4129     0.42        87.32
+34                        REGIONS FINANCIAL CORPORATION   4117     0.42        87.74
+35                        BMO BANK NATIONAL ASSOCIATION   4114     0.42        88.16
+36                                              KEYCORP   3616     0.37        88.53
+37                                 Incomm Holdings Inc.   3453     0.35        88.88
+38                      Atlanticus Services Corporation   2766     0.28        89.16
+39                                 M&T BANK CORPORATION   2661     0.27        89.43
+40                           WESTERN UNION COMPANY, THE   2336     0.24        89.67
+41                       FinCo Services Inc DBA Current   2290     0.23        89.90
+42                                    Credit Karma, LLC   2285     0.23        90.13
+43                                Conduent Incorporated   2249     0.23        90.36
+44                                  FISERV FINXACT CORE   2160     0.22        90.58
+45                                     TransferWise Ltd   2120     0.22        90.80
+46                     HSBC NORTH AMERICA HOLDINGS INC.   2101     0.22        91.02
+47  Fidelity National Information Services, Inc. (FNIS)   2008     0.21        91.23
+48                        PENTAGON FEDERAL CREDIT UNION   1912     0.20        91.43
+49                         SANTANDER HOLDINGS USA, INC.   1908     0.20        91.63
+50                         FIRST NATIONAL BANK OF OMAHA   1853     0.19        91.82
+51                              Winklevoss Exchange LLC   1613     0.17        91.99
+52                                         Synovus Bank   1486     0.15        92.14
+53                          Avant Holding Company, Inc.   1455     0.15        92.29
+54                                 Affirm Holdings, Inc   1431     0.15        92.44
+55              MONEYGRAM PAYMENT SYSTEMS WORLDWIDE INC   1407     0.14        92.58
+56                                  Self Financial Inc.   1401     0.14        92.72
+57                           BBVA FINANCIAL CORPORATION   1399     0.14        92.86
+58                     Continental Finance Company, LLC   1288     0.13        92.99
+59                                      Foris DAX, Inc.   1171     0.12        93.11
+distinct companies: 1,813; top 60 cover 93.1% of rows
+
+=== % with non-empty consumer narrative ===
+NOT AVAILABLE: the API CSV export has no 'Consumer complaint narrative' column (nor 'Consumer consent provided?' / 'Consumer disputed?'). 0% of rows have a narrative.
+
+=== columns: dtype, % missing ===
+                                       dtype  missing_%
+Date received                 datetime64[us]        0.0
+Product                                  str        0.0
+Sub-product                              str       0.01
+Issue                                    str        0.0
+Sub-issue                                str      19.44
+Company public response                  str      59.32
+Company                                  str        0.0
+State                                    str       1.78
+ZIP code                                 str       0.17
+Tags                                     str      84.46
+Submitted via                            str        0.0
+Date sent to company          datetime64[us]        0.0
+Company response to consumer             str        0.0
+Timely response?                         str        0.0
+Complaint ID                           Int64        0.0
+
+=== Company response to consumer ===
+                                  count    pct
+Company response to consumer                  
+Closed with explanation          742470  76.03
+Closed with monetary relief      125602  12.86
+Closed with non-monetary relief   97034   9.94
+In progress                       10163   1.04
+Untimely response                  1260   0.13
+
+=== Timely response? ===
+                   count    pct
+Timely response?               
+Yes               965472  98.87
+No                 11057   1.13
+
+=== Submitted via ===
+                count    pct
+Submitted via               
+Web            852369  87.29
+Referral        60027   6.15
+Phone           54738   5.61
+Postal mail      9019   0.92
+Fax               366   0.04
+Email              10   0.00
